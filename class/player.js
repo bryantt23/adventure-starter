@@ -41,6 +41,10 @@ class Player {
 
   dropItem(itemName) {
     // Fill this in
+    const index = this.items.findIndex(item => item.name === itemName);
+    const item = this.items[index];
+    this.items.splice(index, 1);
+    this.currentRoom.items.push(item);
   }
 
   eatItem(itemName) {
