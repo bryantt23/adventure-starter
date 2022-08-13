@@ -127,7 +127,6 @@ describe('Food', function () {
     expect(player.items.length).to.equal(1);
   });
 
-  /*
   it('a sandwich should exist at the Northern point', function () {
     let world = new World();
     world.loadWorld(worldData);
@@ -136,5 +135,4 @@ describe('Food', function () {
     roomItems = room.items;
     expect(roomItems[0].name).to.equal('sandwich');
   });
-  */
 });
