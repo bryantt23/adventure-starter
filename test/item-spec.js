@@ -88,7 +88,6 @@ describe('Food', function () {
     expect(food.name).to.equal('sandwich');
     expect(food.description).to.equal('a delicious sandwich');
   });
-  /*
   it('should be an instance of Item and Food', function () {
     let food = new Food('sandwich', 'a delicious sandwich');
     let item = new Item('rock', 'just a simple rock');
@@ -128,6 +127,7 @@ describe('Food', function () {
     expect(player.items.length).to.equal(1);
   });
 
+  /*
   it('a sandwich should exist at the Northern point', function () {
     let world = new World();
     world.loadWorld(worldData);

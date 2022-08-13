@@ -1,3 +1,5 @@
+const { Food } = require('../class/food.js');
+
 class Player {
   constructor(name, startingRoom) {
     this.name = name;
@@ -49,6 +51,11 @@ class Player {
 
   eatItem(itemName) {
     // Fill this in
+    const index = this.items.findIndex(item => item.name === itemName);
+    const item = this.items[index];
+    if (item instanceof Food) {
+      this.items.splice(index, 1);
+    }
   }
 
   getItemByName(name) {
